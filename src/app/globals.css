@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --value: 0, 0, 0;
+}
+
+body {
+  @apply bg-primary;
+}
+
+select.auto {
+  @apply px-1  lg:px-4 py-2 rounded-md bg-inherit 
+  focus:outline-none focus:border-info w-full invalid:border-red-500 checked:[&_option]:bg-red-500;
+}
+select.auto option {
+  @apply bg-black bg-opacity-80 print:text-black w-fit;
+}

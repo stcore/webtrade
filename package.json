@@ -1,0 +1,39 @@
+{
+  "name": "trading",
+  "version": "0.2.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "dayjs": "latest",
+    "lodash": "latest",
+    "next": "latest",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hot-toast": "latest",
+    "react-icons": "latest",
+    "recharts": "latest",
+    "resend": "latest",
+    "sweetalert2": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "latest",
+    "@types/lodash": "latest",
+    "@types/node": "latest",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  },
+  "peerDependencies": {
+    "next":"14"
+  }
+}

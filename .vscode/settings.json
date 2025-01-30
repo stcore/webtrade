@@ -1,0 +1,40 @@
+{
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "git.rebaseWhenSync": true,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "prettier.requireConfig": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "files.autoSave": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.sortImports": "explicit"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    "className: ['\"]([^'\"]*)['\"]"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "tw"
+  ],
+  "eslint.format.enable": true,
+  "npm.packageManager": "yarn",
+  "cSpell.diagnosticLevel": "Hint",
+  "search-node-modules.path": "node_modules",
+  "markdown.extension.toc.updateOnSave": false
+}

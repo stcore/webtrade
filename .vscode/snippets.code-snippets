@@ -1,0 +1,131 @@
+{
+  "loading": {
+    "prefix": ["load", "loading"],
+    "body": ["document.querySelector('#loading')?.classList.toggle('hidden')"],
+    "description": "loading #loading in body"
+  },
+  "swall.confirm": {
+    "prefix": ["swall", "swall.confirm"],
+    "body": [
+      "Swal$1.fire({",
+      "\ttitle: 'SEGURO QUE DESEA ELIMINAR?',",
+      "\ticon: 'question',",
+      "\tconfirmButtonText: 'ELIMINAR',",
+      "\tcancelButtonText: 'CANCELAR',",
+      "\tshowConfirmButton: true,",
+      "\tshowCancelButton: true",
+      "}).then(c => {",
+      "\t\tif (c.isConfirmed) {",
+      "\t\t\t$2"
+      "\t\t}",
+      "\t}",
+      ")"
+    ],
+    "description": "swall confirm"
+  },
+  "cache":{
+    "prefix":["cache"],
+    "body":[
+      "const data = await unstable_cache$1(async () => {",
+      "\tlet data = await prisma$2.${3:pre}.findMany({",
+      "\t\twhere: {",
+      "\t\t\t$4",
+      "\t\t},",
+      "\t\torderBy: {",
+      "\t\t\t$5",
+      "\t\t}",
+      "\t})",
+      "\treturn data",
+      "}, ['${6:tag}'],{tags:['tag']})()"
+    ],
+    "description":"Next Cache Manager"
+  },
+  "api":{
+    "prefix":["api","export"],
+    "body":[
+      "export async function ${1:GET}(${2:req}: NextRequest) {",
+      "\t$3",
+      "\treturn Response.json({status:true,data:${4:null},msg:'OK'})",
+      "}"
+    ],
+    "description":"API ROUTE HANDLER"
+  },
+  "actions":{
+    "prefix":["actions"],
+    "body":[
+      "export async function ${2:createPre}(${3:req}) {",
+      "\t${4:console.log('here')}",
+      "\treturn {status:true,data:${5:1},msg:'OK'}",
+      "}"
+    ],
+    "description":"server actions"
+  }
+  ,
+  "page":{
+    "prefix":["page"],
+    "body":[
+      "export default async function Page() {",
+      "\treturn <div>Page</div>",
+      "}"
+    ],
+    "description":"export page dym"
+  },
+  "layout":{
+    "prefix":["layout"],
+    "body":[
+      "import { ReactNode } from \"react\";",
+      "export default async function Layout({children}:{children:ReactNode}) {",
+      "\treturn (<div>Layout",
+      "\t{children}",
+      "\t</div>)",
+      "}"
+    ],
+    "description":"export page dym"
+  },
+  "cc":{
+    "prefix":["comp"],
+    "body":[
+      "export function Comp() {",
+      "\treturn <div>comp</div>",
+      "}"
+    ],
+    "description":"export page dym"
+  },
+  "cs":{
+    "prefix":["comp"],
+    "body":[
+      "export async function Comp() {",
+      "\treturn <div>comp</div>",
+      "}"
+    ],
+    "description":"export page dym"
+  },
+  "params":{
+    "prefix":["params"],
+    "body":[
+      "{ params}: {params: { slug: string }}"],
+    "description":"export page dym"
+  },
+  "search":{
+    "prefix":["search"],
+    "body":[
+      "{ searchParams}: {searchParams: { [key: string]: string | string[] | undefined }}"],
+    "description":"export page dym"
+  },
+  "fullp":{
+    "prefix":["fullp"],
+    "body":[
+      "{ params,searchParams}: {params: { slug: string },searchParams: { [key: string]: string | string[] | undefined }}"],
+    "description":"export page dym"
+  },
+  "now":{
+    "prefix":["now"],
+    "body":["dayjs().tz().format('YYYY-MM-DD HH:mm:ss')"],
+    "description":"NOW LOCAL"
+  },
+  "st":{
+    "prefix":["st"],
+    "body":["style={tw('$1')}"],
+    "description":"REACT TAILWINDCSS"
+  }
+}
