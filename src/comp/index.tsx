@@ -171,7 +171,7 @@ export function Form({
   const ref = useRef<HTMLFormElement>(null)
   return (
     <form
-      ref={ref}
+      ref={ref} /*@ts-ignore*/
       action={form => {
         //@ts-ignore
         const data = Object.fromEntries(form) as formType

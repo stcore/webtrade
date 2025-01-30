@@ -65,7 +65,7 @@ export default function Contactos() {
           <select
             id='interes'
             name='interes'
-            placeholder='Proceso de Interes'
+            aria-placeholder='Proceso de Interes'
             className={`${segment === 'simulacion' ? 'hidden' : ''} form-select w-full bg-inherit border-0 border-b auto`}
           >
             <option value={'comprar'}>COMPRAR</option>

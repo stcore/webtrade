@@ -11,7 +11,7 @@
   "dependencies": {
     "dayjs": "latest",
     "lodash": "latest",
-    "next": "latest",
+    "next": "^14.2.22",
     "react": "^18",
     "react-dom": "^18",
     "react-hot-toast": "latest",
@@ -30,10 +30,10 @@
     "eslint": "latest",
     "eslint-config-next": "latest",
     "postcss": "latest",
-    "tailwindcss": "latest",
+    "tailwindcss": "^3.4.17",
     "typescript": "latest"
   },
   "peerDependencies": {
-    "next":"14"
+    "next": "14"
   }
 }
